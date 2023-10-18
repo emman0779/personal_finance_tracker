@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Personal Finance Tracker</title>
+
+    <script src="balance.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="welcome">
+        <div class="profile">
+          <div class="imgContainer">
+            <img src="myImage.png" alt="" width="100%" />
+          </div>
+          <p>Emmanuel G.</p>
+        </div>
+        <div class="myAccount">
+          <a href="">My Account</a>
+        </div>
+      </div>
+      <h1>My Finance Tracker</h1>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="balanceContainer">
+          <p>Current balance</p>
+          <div class="balance">
+            <h2 id="currentBalance">&#8369 0</h2>
+            <a href="transaction.html"></a>
+            <button class="firstMoney" id="thefirstMoneyModal">Money In</button><div class="moneyModal">
+              <div class="moneyModalContent">
+                <p id="closeMoneyModal">x</p>
+                <div class="moneyInModal">
+                  <h3>Money In</h3>
+                  <form action="">
+                    <div class="inputMoney">
+                      <label for="#amount">Amount</label>
+                      <input type="number" id="amount" placeholder="PHP 0" />
+                    </div>
+                    <div class="inputMoney">
+                      <label for="#category">Category</label>
+                      <input
+                        type="text"
+                        id="category"
+                        placeholder="Uncategorized"
+                      />
+                    </div>
+                    <div class="inputMoney">
+                      <label for="#note">Note</label>
+                      <input type="text" id="note" placeholder="Enter Note" />
+                    </div>
+                  </form>
+                  <button id="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secSection">
+        <div>
+          <a href="https://www.moneymax.ph/personal-finance/articles/tips-on-saving-money" target="_blank">
+            <img src="savings.png" alt="" />
+            <p>Savings</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://grit.ph/budget/" target="_blank">
+            <img src="budget.png" alt="" />
+            <p>Budget Tips</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.investopedia.com/investing/steps-successful-investment-journey/" target="_blank">
+            <img src="invest.png" alt="" />
+            <p>Invest</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://grit.ph/borrow-money/" target="_blank">
+            <img src="borrow.png" alt="" />
+            <p>Borrow</p>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdSection">
+        <h1>A Holistic Approach to Money Management</h1>
+        <p>
+          The key to financial well-being lies in a balanced approach to managing your money. Start by creating a realistic budget that prioritizes your essential expenses while leaving room for savings. Consistently contribute to an emergency fund to handle unexpected expenses without derailing your financial goals. </p>
+      </section>
+    </main>
+    <nav>
+      <a href=""><i class="fa-solid fa-house"></i></a>
+      <a href="transaction.html"
+        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+      ></a>
+      <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+      <a href=""
+        ><i class="fa-solid fa-ellipsis"></i>
+        <p>More</p></a
+      >
+    </nav>
+  </body>
+</html>
