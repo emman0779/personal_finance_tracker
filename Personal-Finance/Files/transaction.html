@@ -10,31 +10,41 @@
     />
     <title>Personal Finance Tracker</title>
   </head>
+
   <body id="transbody">
     <h1 class="transaction">Transaction</h1>
+
     <section class="record">
       <div class="recordContainer">
-        <h4>Total Expenses in 1 week</h4>
+        <h4>Total Balance</h4>
         <hr class="transHr" />
+        <h1 id="totalBalance"></h1>
       </div>
     </section>
+
     <section class="todaysRecord">
       <div class="todaysMoney">
         <h5>Today's Money In</h5>
         <hr class="transHr" />
+        <h1 id="myMoney"></h1>
       </div>
       <div class="todaysExpense">
         <h5>Today's Money Out</h5>
         <hr class="transHr" />
+        <h1 id="myMoneyOut"></h1>
       </div>
     </section>
+
     <hr />
+
+    <section id="moneyRecords"></section>
+
     <section class="moneyTransact">
       <div class="moneyIn">
         <button id="theMoneyIn">Money In</button>
         <div class="moneyModal">
           <div class="moneyModalContent">
-            <p id="closeMoneyModal">x</p>
+            <p class="closeMoneyModal" id="closeMoneyModalIn">x</p>
             <div class="moneyInModal">
               <h3>Money In</h3>
               <form action="">
@@ -60,20 +70,119 @@
           </div>
         </div>
       </div>
+
       <div class="moneyOut">
-        <button>Money Out</button>
+        <button id="theMoneyOut">Money Out</button>
+        <div class="moneyModal">
+          <div class="moneyModalContent">
+            <p class="closeMoneyModal" id="closeMoneyModalOut">x</p>
+            <div class="moneyInModal">
+              <h3 style="color: red">Money Out</h3>
+              <form action="">
+                <div class="inputMoney">
+                  <label for="#amountOut">Amount</label>
+                  <input type="number" id="amountOut" placeholder="PHP 0" />
+                </div>
+                <div class="inputMoney">
+                  <label for="#categoryOut">Category</label>
+                  <input
+                    type="text"
+                    id="categoryOut"
+                    placeholder="Uncategorized"
+                  />
+                </div>
+                <div class="inputMoney">
+                  <label for="#noteOut">Note</label>
+                  <input type="text" id="noteOut" placeholder="Enter Note" />
+                </div>
+              </form>
+              <button id="submitOut">Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="dashboard">
+      <h1>DASHBOARD</h1>
+      <div id="graphIn" class="graph">
+        <h3 class="headIn">Money In</h3>
+        <div class="barGraphIn" id="barGraphIn"></div>
+      </div>
+      <div class="show">
+        <button id="show">Show Money In</button>
+        <button id="showOut">Show Money Out</button>
+      </div>
+      <div id="graphOut" class="graph">
+        <h3 class="headIn">Money Out</h3>
+        <div class="barGraphIn" id="barGraphOut"></div>
+      </div>
+    </section>
+
     <nav>
       <a href="index.html"><i class="fa-solid fa-house"></i></a>
-      <a href="transaction.html"
+      <a href="#transbody"
         ><i class="fa-solid fa-arrow-right-arrow-left"></i
       ></a>
-      <a href=""><i class="fa-solid fa-chart-simple"></i></a>
-      <a href=""
+      <a href="#dashboard"><i class="fa-solid fa-chart-simple"></i></a>
+      <a id="moreness"
         ><i class="fa-solid fa-ellipsis"></i>
         <p>More</p></a
       >
+      <div id="moreContent">
+        <p id="eks">X</p>
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <div class="state">
+            <p>
+              We, the students of TMCFI, are engaged in the pursuit of coding
+              proficiency. Through the collaborative efforts of our team, we
+              have successfully developed a rudimentary system. This endeavor
+              serves as a testament to our commitment and eagerness to enhance
+              our skills in the realm of coding.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <div class="images">
+              <img src="Alwen.jpg" alt="" />
+              <h4>Alwen Rose Tan</h4>
+            </div>
+            <div class="images">
+              <img src="Dion.jpg" alt="" />
+              <h4>Dion Vacunawa</h4>
+            </div>
+          </div>
+          <h1 class="contact">CONTACT US</h1>
+          <div>
+            <div>
+              <p>Cell No.: +639482122448 / +639129035544</p>
+              <p>
+                Email: alwenrosegrandetan@gmail.com / dionvacunawa@gmail.com
+              </p>
+              <p class="fb1">
+                Facebook:
+                <a href="https://web.facebook.com/ALWENIANG.9" class="fb"
+                  >Alwen Rose Tan</a
+                >
+                /
+                <a href="https://web.facebook.com/dion.vacunawa" class="fb"
+                  >Dion Vacunawa</a
+                >
+              </p>
+              <p class="fb1">
+                Instagram:
+                <a href="https://www.instagram.com/wawennnx/" class="fb"
+                  >Alwen Rose Tan</a
+                >
+                /
+                <a href="https://www.instagram.com/frnzldion21_99/" class="fb"
+                  >Dion Vacunawa</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   </body>
   <script src="main.js"></script>

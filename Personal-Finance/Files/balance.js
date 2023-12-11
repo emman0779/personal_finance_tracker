@@ -3,7 +3,10 @@ const moneyModal = document.querySelector(".moneyModal");
 const closeMoneyModal = document.querySelector("#closeMoneyModal");
 const currentBalance = document.getElementById("currentBalance");
 const amount = document.getElementById("amount");
-const submit = document.getElementById("submit");
+// const submit = document.getElementById("submit");
+const more = document.getElementById("moreness");
+const moreContent = document.getElementById("moreContent");
+const ekis = document.getElementById("eks");
 let theBalance = 0;
 
 function calcAmount() {
@@ -17,23 +20,32 @@ function getBalance() {
   if (finalBalance === null) {
     currentBalance.innerHTML = `&#8369 0`;
   } else if (finalBalance >= 0) {
-    currentBalance.innerHTML = `&#8369 ${finalBalance}`;
+    currentBalance.innerHTML = `&#8369 ${localStorage.getItem("totalBalance")}`;
   }
 }
 getBalance();
 
-function closeModal() {
-  moneyModal.style.display = "none";
-}
+// function closeModal() {
+//   moneyModal.style.display = "none";
+// }
 
-submit.addEventListener("click", () => {
-  calcAmount();
-  closeModal();
-  amount.value = "";
-});
+// submit.addEventListener("click", () => {
+//   calcAmount();
+//   closeModal();
+//   amount.value = "";
+// });
 
 theMoneyIn.addEventListener("click", () => {
   moneyModal.style.display = "flex";
 });
 
-closeMoneyModal.addEventListener("click", closeModal);
+// closeMoneyModal.addEventListener("click", closeModal);
+
+more.addEventListener("click", () => {
+  moreContent.style.marginLeft = "0%";
+  moreContent.style.transition = "1s";
+});
+
+ekis.addEventListener("click", () => {
+  moreContent.style.marginLeft = "400%";
+});

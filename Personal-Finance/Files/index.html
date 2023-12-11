@@ -9,10 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <title>Personal Finance Tracker</title>
-
     <script src="balance.js" defer></script>
   </head>
   <body>
+
     <header>
       <div class="welcome">
         <div class="profile">
@@ -27,6 +27,7 @@
       </div>
       <h1>My Finance Tracker</h1>
     </header>
+
     <main>
       <section class="firstSection">
         <div class="balanceContainer">
@@ -34,7 +35,8 @@
           <div class="balance">
             <h2 id="currentBalance">&#8369 0</h2>
             <a href="transaction.html"></a>
-            <button class="firstMoney" id="thefirstMoneyModal">Money In</button><div class="moneyModal">
+            <button class="firstMoney" id="thefirstMoneyModal"><a href="transaction.html">Money In</a></button>
+            <!-- <div class="moneyModal">
               <div class="moneyModalContent">
                 <p id="closeMoneyModal">x</p>
                 <div class="moneyInModal">
@@ -60,10 +62,11 @@
                   <button id="submit">Submit</button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
+      
       <section class="secSection">
         <div>
           <a href="https://www.moneymax.ph/personal-finance/articles/tips-on-saving-money" target="_blank">
@@ -90,23 +93,55 @@
           </a>
         </div>
       </section>
+
       <hr />
+
       <section class="thirdSection">
         <h1>A Holistic Approach to Money Management</h1>
         <p>
           The key to financial well-being lies in a balanced approach to managing your money. Start by creating a realistic budget that prioritizes your essential expenses while leaving room for savings. Consistently contribute to an emergency fund to handle unexpected expenses without derailing your financial goals. </p>
       </section>
+
     </main>
+
     <nav>
       <a href=""><i class="fa-solid fa-house"></i></a>
       <a href="transaction.html"
         ><i class="fa-solid fa-arrow-right-arrow-left"></i
       ></a>
-      <a href=""><i class="fa-solid fa-chart-simple"></i></a>
-      <a href=""
+      <a href="transaction.html"><i class="fa-solid fa-chart-simple"></i></a>
+      <a id="moreness"
         ><i class="fa-solid fa-ellipsis"></i>
         <p>More</p></a
       >
+      <div id="moreContent">
+        <p id="eks">X</p>
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <div class="state">
+            <p>We, the students of TMCFI, are engaged in the pursuit of coding proficiency. Through the collaborative efforts of our team, we have successfully developed a rudimentary system. This endeavor serves as a testament to our commitment and eagerness to enhance our skills in the realm of coding.</p>
+          </div>
+          <div class="imageContainer">
+            <div class="images">
+              <img src="Alwen.jpg" alt="">
+              <h4>Alwen Rose Tan</h4>
+            </div>
+            <div class="images">
+              <img src="Dion.jpg" alt="">
+              <h4>Dion Vacunawa</h4>
+            </div>
+          </div>
+          <h1 class="contact">CONTACT US</h1>
+          <div>
+            <div>
+              <p>Cell No.: +639482122448 / +639129035544</p>
+              <p>Email: alwenrosegrandetan@gmail.com / dionvacunawa@gmail.com</p>
+              <p class="fb1">Facebook: <a href="https://web.facebook.com/ALWENIANG.9" class="fb">Alwen Rose Tan</a> / <a href="https://web.facebook.com/dion.vacunawa" class="fb">Dion Vacunawa</a></p>
+              <p class="fb1">Instagram: <a href="https://www.instagram.com/wawennnx/" class="fb">Alwen Rose Tan</a>  / <a href="https://www.instagram.com/frnzldion21_99/" class="fb">Dion Vacunawa</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   </body>
 </html>

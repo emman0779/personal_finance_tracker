@@ -8,6 +8,10 @@
   box-sizing: border-box;
   color: white;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
 }
 
 body {
@@ -252,6 +256,28 @@ nav a i {
   bottom: 15%;
 }
 
+#moneyRecords {
+  padding: 10px 25px;
+  height: 270px;
+  overflow: scroll;
+}
+
+#myMoney,
+#myMoneyOut,
+#totalBalance {
+  text-align: center;
+  color: black;
+  margin-top: 9px;
+  font-size: 2.4rem;
+}
+
+.recordings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
 .moneyIn,
 .moneyOut {
   width: 100%;
@@ -315,7 +341,7 @@ nav a i {
   }
 }
 
-#closeMoneyModal {
+.closeMoneyModal {
   color: black;
   position: absolute;
   top: 0;
@@ -377,4 +403,161 @@ nav a i {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#submitOut {
+  position: absolute;
+  width: 90% !important;
+  border: none !important;
+  background-color: red !important;
+  color: white !important;
+  height: 40px !important;
+  border-radius: 10px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .amounting {
+  color: green;
+} */
+.amountingOut {
+  color: red;
+}
+
+#dashboard {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  padding-top: 30px;
+}
+
+#dashboard h1 {
+  text-align: center;
+  font-family: "Black Ops One", serif;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.graph {
+  border: 2px white solid;
+  height: 200px;
+  width: 95%;
+  margin: auto;
+  padding: 0px 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: -9;
+}
+
+.show {
+  width: 300px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#show,
+#showOut {
+  color: black;
+  padding: 5px;
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+}
+
+.hal {
+  /* height: 100%; */
+  width: 30px;
+  background-color: white;
+  /* display: block; */
+  /* position: absolute;
+  bottom: 0; */
+}
+
+@keyframes grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.halo {
+  font-size: 10px !important;
+  color: black;
+  text-align: center;
+}
+
+.headIn {
+  text-align: center;
+}
+.barGraphIn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 1px;
+  display: flex !important;
+  /* flex-direction: row-reverse; */
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: -9;
+}
+
+#moreContent {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* width: 0; */
+  margin-top: -657px;
+  margin-left: 400%;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+.images {
+  width: 150px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.images img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.state {
+  margin: 20px;
+}
+
+.contact {
+  margin: 10px 0;
+}
+
+.fb {
+  height: 20px !important;
+  width: 200px !important;
+  color: white;
+  background: none;
+  border-radius: 0%;
+  display: block;
+  margin: auto;
+}
+.fb1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
